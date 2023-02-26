@@ -86,7 +86,19 @@ async function getData() {
 
           const link = `Link : https://qx.app/asset/0x9c7305eb78a432ced5C4D14Cac27E8Ed569A2e26/${data.results[i].token_id}`;
 
-          const text = link + "     " + " Profit margin:" + margin + "\n";
+         const text =
+            link +
+            "     " +
+            "     Velo Value above USD listing price as %     " +
+            margin +
+            "     Velo Value in USD   " +
+            veloValue +
+            "    Listed Price      " +
+            sellOrder +
+            "\n" +
+            "\n";
+          
+          
           const filename = "data.txt"; // The path to the file you want to write to
           const filePath = `./${filename}`;
 
